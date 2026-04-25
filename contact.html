@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Feedback | Loft</title>
+    <link rel="stylesheet" href="contact-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+.pk-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.pk-tag {
+    color: #1339ac;
+    font-weight: 800;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+
+.pk-title {
+    font-size: 38px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+
+.pk-title span {
+    color: #ffb400;
+}
+
+.pk-contact-section {
+    padding: 100px 0;
+    background: #f9fbff;
+}
+
+.pk-contact-grid {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.pk-contact-info, .pk-contact-form {
+    flex: 1;
+    min-width: 320px;
+}
+
+.pk-info-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 25px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.pk-icon-circle {
+    width: 50px;
+    height: 50px;
+    background: #1339ac;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+.pk-contact-form {
+    background: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.pk-contact-form input, .pk-contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: inherit;
+}
+
+.pk-btn-submit {
+    background: #1339ac;
+    color: #fff;
+    border: none;
+    padding: 15px 35px;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    width: 100%;
+}
+
+.pk-work-gallery {
+    padding: 100px 0;
+}
+
+.pk-center-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.pk-gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.pk-work-img {
+    height: 250px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.pk-work-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+.pk-work-img:hover img {
+    transform: scale(1.1);
+}
+
+.pk-feedback-section {
+    padding: 100px 0;
+    background: #1339ac;
+    color: #fff;
+}
+
+.pk-feedback-section .pk-tag { color: #ffb400; }
+
+.pk-feedback-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.pk-feedback-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 40px;
+    border-radius: 20px;
+    width: 450px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.pk-user-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 20px auto;
+    border: 3px solid #ffb400;
+}
+
+.pk-user-img img { width: 100%; height: 100%; object-fit: cover; }
+
+@media (max-width: 768px) {
+    .pk-title { font-size: 30px; }
+    .pk-contact-form { padding: 20px; }
+}
+    </style>
+</head>
+<body>
+
+<section class="pk-contact-section">
+    <div class="pk-container">
+        <div class="pk-contact-grid">
+            <div class="pk-contact-info">
+                <span class="pk-tag">GET IN TOUCH</span>
+                <h2 class="pk-title">Contact Us For <span>A Shiny Home</span></h2>
+                <div class="pk-info-box">
+                    <div class="pk-info-item">
+                        <div class="pk-icon-circle">📩</div>
+                        <div>
+                            <h4>Email Address</h4>
+                            <p>info@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="pk-info-item">
+                        <div class="pk-icon-circle">📞</div>
+                        <div>
+                            <h4>Phone Number</h4>
+                            <p>78878986321</p>
+                        </div>
+                    </div>
+                    <div class="pk-info-item">
+                        <div class="pk-icon-circle">📍</div>
+                        <div>
+                            <h4>Office Location</h4>
+                            <p>78521#, XXXX, 55113</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pk-contact-form">
+                <form>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Email Address" required>
+                    <textarea placeholder="How can we help you?" rows="5"></textarea>
+                    <button type="submit" class="pk-btn-submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="pk-work-gallery">
+    <div class="pk-container">
+        <div class="pk-center-header">
+            <span class="pk-tag">OUR WORK</span>
+            <h2 class="pk-title">Our Recent <span>Project Photos</span></h2>
+        </div>
+        <div class="pk-gallery-grid">
+            <div class="pk-work-img"><img src="rooming.jpg"></div>
+            <div class="pk-work-img"><img src="kicthen.jpg"></div>
+            <div class="pk-work-img"><img src="door.jfif"></div>
+            <div class="pk-work-img"><img src="tv.webp"></div>
+        </div>
+    </div>
+</section>
+
+<section class="pk-feedback-section">
+    <div class="pk-container">
+        <div class="pk-center-header">
+            <span class="pk-tag">TESTIMONIALS</span>
+            <h2 class="pk-title">What Our <span>Customers Say</span></h2>
+        </div>
+        <div class="pk-feedback-grid">
+            <div class="pk-feedback-card">
+                <div class="pk-user-img"><img src="customer111.avif"></div>
+                <p>"The team was professional and my house has never been cleaner. Highly recommended!"</p>
+                <h4>John Doe</h4>
+                <span>Home Owner</span>
+            </div>
+            <div class="pk-feedback-card">
+                <div class="pk-user-img"><img src="customer2.jfif" alt="User"></div>
+                <p>"Excellent office cleaning service. They are very punctual and detail-oriented."</p>
+                <h4>Sarah Smith</h4>
+                <span>Office Manager</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

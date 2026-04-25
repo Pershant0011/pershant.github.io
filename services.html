@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cleaning Services | Loft</title>
+    <link rel="stylesheet" href="services-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f7ff;
+}
+
+.pk-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.pk-cleaning-services {
+    padding: 100px 0;
+}
+
+.pk-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.pk-tag {
+    background: #e1ebff;
+    color: #1339ac;
+    padding: 5px 15px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.pk-main-title {
+    font-size: 40px;
+    font-weight: 800;
+    color: #1a1a1a;
+    margin-top: 20px;
+}
+
+.pk-main-title span {
+    color: #1339ac;
+}
+
+.pk-subtitle {
+    color: #555;
+    margin-top: 10px;
+}
+
+.pk-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+.pk-service-card {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    transition: 0.3s ease;
+    border: 1px solid #eef2f6;
+}
+
+.pk-service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(19, 57, 172, 0.1);
+}
+
+.pk-image-wrapper {
+    position: relative;
+    height: 220px;
+}
+
+.pk-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.pk-overlay-icon {
+    position: absolute;
+    bottom: -20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    background: #ffb400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    border-radius: 12px;
+    color: #000;
+    box-shadow: 0 5px 15px rgba(255, 180, 0, 0.4);
+}
+
+.pk-info {
+    padding: 40px 25px 25px;
+}
+
+.pk-info h3 {
+    font-size: 20px;
+    color: #1339ac;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.pk-info p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.pk-btn-small {
+    background: transparent;
+    border: 2px solid #1339ac;
+    color: #1339ac;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.pk-btn-small:hover {
+    background: #1339ac;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .pk-main-title {
+        font-size: 30px;
+    }
+}
+    </style>
+</head>
+<body>
+
+<section class="pk-cleaning-services">
+    <div class="pk-container">
+        <div class="pk-header">
+            <span class="pk-tag">OUR EXPERTISE</span>
+            <h2 class="pk-main-title">Professional <span>Cleaning Solutions</span></h2>
+            <p class="pk-subtitle">We make your space shine with our specialized eco-friendly cleaning methods.</p>
+        </div>
+
+        <div class="pk-grid">
+            <div class="pk-service-card">
+                <div class="pk-image-wrapper">
+                    <img src="service11.jpg">
+                    <div class="pk-overlay-icon">🧽</div>
+                </div>
+                <div class="pk-info">
+                    <h3>Deep Home Cleaning</h3>
+                    <p>Complete sanitization of bedrooms, kitchens, and living areas using non-toxic products.</p>
+                    <button class="pk-btn-small">Book Now</button>
+                </div>
+            </div>
+
+            <div class="pk-service-card">
+                <div class="pk-image-wrapper">
+                    <img src="service2.avif">
+                    <div class="pk-overlay-icon">🏢</div>
+                </div>
+                <div class="pk-info">
+                    <h3>Office & Commercial</h3>
+                    <p>Professional workspace maintenance to keep your team healthy and productive.</p>
+                    <button class="pk-btn-small">Book Now</button>
+                </div>
+            </div>
+
+            <div class="pk-service-card">
+                <div class="pk-image-wrapper">
+                    <img src="service3.avif">
+                    <div class="pk-overlay-icon">🧹</div>
+                </div>
+                <div class="pk-info">
+                    <h3>Post-Construction</h3>
+                    <p>Removing dust and debris after renovation to make your new space move-in ready.</p>
+                    <button class="pk-btn-small">Book Now</button>
+                </div>
+            </div>
+
+            <div class="pk-service-card">
+                <div class="pk-image-wrapper">
+                    <img src="service4.jpg">
+                    <div class="pk-overlay-icon">✨</div>
+                </div>
+                <div class="pk-info">
+                    <h3>Window & Glass</h3>
+                    <p>Streak-free cleaning for high-rise windows and glass partitions for a crystal view.</p>
+                    <button class="pk-btn-small">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

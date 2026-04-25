@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Loft</title>
+    <link rel="stylesheet" href="about-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    overflow-x: hidden;
+}
+
+.pk-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.pk-about-hero {
+    padding: 100px 0;
+    background: linear-gradient(to bottom right, #f8faff, #ffffff);
+}
+
+.pk-about-flex {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.pk-about-text {
+    flex: 1;
+    min-width: 320px;
+}
+
+.pk-tag {
+    color: #1339ac;
+    font-weight: 800;
+    font-size: 13px;
+    letter-spacing: 2.5px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.pk-title {
+    font-size: 48px;
+    font-weight: 800;
+    color: #222;
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.pk-title span {
+    color: #ffb400;
+}
+
+.pk-desc {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 35px;
+}
+
+.pk-stats {
+    display: flex;
+    gap: 50px;
+}
+
+.pk-stat-item h3 {
+    font-size: 36px;
+    color: #1339ac;
+    font-weight: 800;
+}
+
+.pk-stat-item p {
+    font-weight: 600;
+    color: #333;
+}
+
+.pk-image-grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    position: relative;
+}
+
+.pk-worker-card {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+    transition: transform 0.4s ease;
+}
+
+.pk-worker-card:hover {
+    transform: translateY(-12px);
+}
+
+.pk-worker-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.pk-main-worker {
+    grid-row: span 2;
+    height: 480px;
+}
+
+.pk-small-worker {
+    height: 280px;
+    align-self: end;
+    margin-bottom: 20px;
+}
+
+.pk-services-highlight {
+    padding: 60px 0;
+    background-color: #1339ac;
+}
+
+.pk-box-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.pk-service-card {
+    background: rgba(255, 255, 255, 0.08);
+    padding: 40px 20px;
+    border-radius: 12px;
+    text-align: center;
+    color: white;
+    width: 280px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    transition: 0.3s ease;
+}
+
+.pk-service-card:hover {
+    background: #ffb400;
+    color: #000;
+    transform: scale(1.05);
+}
+
+.pk-icon-box {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.pk-service-card h4 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+@media (max-width: 992px) {
+    .pk-about-flex {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .pk-stats {
+        justify-content: center;
+    }
+    
+    .pk-main-worker {
+        height: 380px;
+    }
+
+    .pk-title {
+        font-size: 34px;
+    }
+}
+
+@media (max-width: 480px) {
+    .pk-image-grid {
+        grid-template-columns: 1fr;
+    }
+    .pk-small-worker {
+        display: none;
+    }
+}
+    </style>
+</head>
+<body>
+
+<section class="pk-about-hero">
+    <div class="pk-container">
+        <div class="pk-about-flex">
+            <div class="pk-about-text">
+                <span class="pk-tag">KNOW MORE ABOUT US</span>
+                <h1 class="pk-title">Professional <span>Cleaning Team</span> Working for You</h1>
+                <p class="pk-desc">
+                    Our dedicated team of professionals is committed to providing high-quality cleaning services. We use eco-friendly products and advanced techniques to ensure your environment is safe, clean, and healthy. Whether it is your home or office, we handle every corner with care and precision.
+                </p>
+                <div class="pk-stats">
+                    <div class="pk-stat-item">
+                        <h3>10k+</h3>
+                        <p>Happy Clients</p>
+                    </div>
+                    <div class="pk-stat-item">
+                        <h3>150+</h3>
+                        <p>Expert Workers</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pk-image-grid">
+                <div class="pk-worker-card pk-main-worker">
+                    <img src="worker11111.jpg">
+                </div>
+                <div class="pk-worker-card pk-small-worker">
+                    <img src="worker2.webp" alt="Cleaning Professional">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="pk-services-highlight">
+    <div class="pk-container">
+        <div class="pk-box-wrapper">
+            <div class="pk-service-card">
+                <div class="pk-icon-box">🏠</div>
+                <h4>Residential Cleaning</h4>
+            </div>
+            <div class="pk-service-card">
+                <div class="pk-icon-box">🏢</div>
+                <h4>Commercial Cleaning</h4>
+            </div>
+            <div class="pk-service-card">
+                <div class="pk-icon-box">🌱</div>
+                <h4>Eco-Friendly Solutions</h4>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

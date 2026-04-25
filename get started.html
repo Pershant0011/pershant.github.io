@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Started | Loft</title>
+    <link rel="stylesheet" href="contact-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+}
+
+.pk-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.pk-contact-wrapper {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #f0f7ff 0%, #ffffff 100%);
+}
+
+.pk-header-center {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.pk-tag {
+    background: #1339ac;
+    color: #fff;
+    padding: 6px 15px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.pk-main-title {
+    font-size: 40px;
+    font-weight: 800;
+    color: #222;
+    margin-top: 15px;
+}
+
+.pk-main-title span {
+    color: #1339ac;
+}
+
+.pk-subtitle {
+    color: #666;
+    max-width: 600px;
+    margin: 10px auto 0;
+}
+
+.pk-contact-flex {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.pk-contact-details {
+    flex: 1;
+    min-width: 320px;
+}
+
+.pk-detail-card {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.03);
+    transition: 0.3s;
+}
+
+.pk-detail-card:hover {
+    transform: translateX(10px);
+}
+
+.pk-icon-bg {
+    width: 55px;
+    height: 55px;
+    background: #eef2ff;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    margin-right: 20px;
+}
+
+.pk-detail-info h4 {
+    font-size: 16px;
+    color: #1339ac;
+    font-weight: 700;
+}
+
+.pk-detail-info p {
+    color: #555;
+    font-size: 15px;
+}
+
+.pk-work-preview {
+    margin-top: 40px;
+}
+
+.pk-work-preview h4 {
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.pk-work-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.pk-work-grid img {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.pk-form-container {
+    flex: 1;
+    min-width: 320px;
+}
+
+.pk-glass-form {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 25px;
+    box-shadow: 0 20px 50px rgba(19, 57, 172, 0.1);
+    border: 1px solid #eef2f6;
+}
+
+.pk-glass-form h3 {
+    margin-bottom: 25px;
+    font-weight: 800;
+    color: #222;
+}
+
+.pk-input-group {
+    margin-bottom: 20px;
+}
+
+.pk-input-group label {
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #444;
+}
+
+.pk-input-group input, .pk-input-group select, .pk-input-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #e1e8ef;
+    border-radius: 10px;
+    background: #fcfdfe;
+    font-family: inherit;
+    transition: 0.3s;
+}
+
+.pk-input-group input:focus {
+    border-color: #1339ac;
+    outline: none;
+    box-shadow: 0 0 0 4px rgba(19, 57, 172, 0.05);
+}
+
+.pk-submit-btn {
+    width: 100%;
+    background: #1339ac;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.pk-submit-btn:hover {
+    background: #ffb400;
+    color: #000;
+}
+
+.pk-testimonial-section {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.pk-testi-title {
+    margin-bottom: 30px;
+    font-weight: 800;
+}
+
+.pk-testi-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.pk-testi-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 20px;
+    width: 350px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+.pk-testi-card img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.pk-testi-card p {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.pk-testi-card h5 {
+    color: #1339ac;
+    font-weight: 700;
+}
+
+@media (max-width: 768px) {
+    .pk-main-title { font-size: 30px; }
+    .pk-glass-form { padding: 25px; }
+}
+    </style>
+</head>
+<body>
+
+<section class="pk-contact-wrapper">
+    <div class="pk-container">
+        
+        <div class="pk-header-center">
+            <span class="pk-tag">CONTACT US</span>
+            <h2 class="pk-main-title">Ready to Make Your <span>Space Shine?</span></h2>
+            <p class="pk-subtitle">Reach out today for a free estimate or to schedule your professional cleaning service.</p>
+        </div>
+
+        <div class="pk-contact-flex">
+            
+            <div class="pk-contact-details">
+                <div class="pk-detail-card">
+                    <div class="pk-icon-bg">📩</div>
+                    <div class="pk-detail-info">
+                        <h4>Email Address</h4>
+                        <p>info@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="pk-detail-card">
+                    <div class="pk-icon-bg">📞</div>
+                    <div class="pk-detail-info">
+                        <h4>Phone Number</h4>
+                        <p>78878986321</p>
+                    </div>
+                </div>
+
+                <div class="pk-detail-card">
+                    <div class="pk-icon-bg">📍</div>
+                    <div class="pk-detail-info">
+                        <h4>Office Address</h4>
+                        <p>78521#, XXXX, 55113</p>
+                    </div>
+                </div>
+
+                <div class="pk-work-preview">
+                    <h4>Our Recent Work</h4>
+                    <div class="pk-work-grid">
+                        <img src="rooming.jpg">
+                        <img src="tv.webp">
+                        <img src="kicthen.jpg">
+                        <img src="outer.avif">
+                    </div>
+                </div>
+            </div>
+
+            <div class="pk-form-container">
+                <div class="pk-glass-form">
+                    <h3>Send Us A Message</h3>
+                    <form action="#">
+                        <div class="pk-input-group">
+                            <label>Full Name</label>
+                            <input type="text" placeholder="Enter your name" required>
+                        </div>
+                        <div class="pk-input-group">
+                            <label>Email Address</label>
+                            <input type="email" placeholder="Enter your email" required>
+                        </div>
+                        <div class="pk-input-group">
+                            <label>Service Type</label>
+                            <select>
+                                <option>Home Cleaning</option>
+                                <option>Office Cleaning</option>
+                                <option>Window Cleaning</option>
+                            </select>
+                        </div>
+                        <div class="pk-input-group">
+                            <label>Message</label>
+                            <textarea rows="4" placeholder="How can we help?"></textarea>
+                        </div>
+                        <button type="submit" class="pk-submit-btn">Send Inquiry</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="pk-testimonial-section">
+            <h3 class="pk-testi-title">Client Feedback</h3>
+            <div class="pk-testi-grid">
+                <div class="pk-testi-card">
+                    <img src="customer4.jpg">
+                    <p>Amazing service! My office looks brand new every morning.</p>
+                    <h5>- Maria</h5>
+                </div>
+                <div class="pk-testi-card">
+                    <img src="customer3.avif" alt="Customer">
+                    <p>The best cleaning team I have ever hired. Very professional.</p>
+                    <h5>- Alex Johnson</h5>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>
